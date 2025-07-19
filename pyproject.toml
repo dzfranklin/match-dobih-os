@@ -1,0 +1,22 @@
+[project]
+name = "match-dobih-os"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Daniel Franklin", email = "daniel@danielzfranklin.org" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas (>=2.3.0,<3.0.0)",
+  "geopandas (>=1.1.0,<2.0.0)",
+  "pyarrow (>=20.0.0,<21.0.0)",
+  "jellyfish (>=1.2.0,<2.0.0)",
+  "anthropic (>=0.58.2,<0.59.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "match_dobih_os.main:main"
